@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listeProduits>
+	
+	
+	<produit nom="Bounty">
+		<prixHT>8.0</prixHT>
+		<quantite>2</quantite>
+		<catalogue>Friandise</catalogue>
+	</produit>
+	
+	<produit nom="Raider">
+		<prixHT>5.5</prixHT>
+		<quantite>7</quantite>
+		<catalogue>Friandise</catalogue>
+	</produit>
+	
+	<produit nom="Treets">
+		<prixHT>6.99</prixHT>
+		<quantite>25</quantite>
+		<catalogue>Technologie</catalogue>
+	</produit>
+<produit nom="PC"><prixHT>453.2</prixHT><quantite>10</quantite><catalogue>Technologie</catalogue></produit><produit nom="abalk"><prixHT>4542156.0</prixHT><quantite>1</quantite><catalogue>test</catalogue></produit></listeProduits>

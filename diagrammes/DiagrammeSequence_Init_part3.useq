@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.13" icons="true">  
+  <object id="1" language="java" name="graphique.FenetreAccueil" project="UML" 
+    file="/UML/src/graphique/FenetreAccueil.java" binary="false" type="class" autoSize="false">    
+    <position height="620" width="186" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="752" width="110" x="5" y="76"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="698" width="110" x="5" y="112"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="18" width="110" x="5" y="414"/>    
+    </execution>  
+  </object>  
+  <object id="14" language="java" name="application.ControleurEnsembleCatalogue" project="UML" 
+    file="/UML/src/application/ControleurEnsembleCatalogue.java" binary="false" label="&lt;static&gt;" type="class" 
+    autoSize="false">    
+    <position height="584" width="425" x="186" y="0"/>    
+    <execution id="6">      
+      <position height="251" width="421" x="191" y="136"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="197" width="0" x="0" y="172"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="126" width="421" x="191" y="393"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="118" width="421" x="191" y="573"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="54" width="421" x="191" y="738"/>    
+    </execution>  
+  </object>  
+  <object id="33" language="java" name="java.util.List" project="UML_Part2" 
+    file="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar" binary="true" label="lesCatalogues" type="interface" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="32">      
+      <position height="18" width="0" x="0" y="756"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="18" width="0" x="0" y="411"/>    
+    </execution>  
+  </object>  
+  <object id="34" language="java" name="metier.I_Catalogue" project="UML" file="/UML/src/metier/I_Catalogue.java" 
+    binary="false" label="unCata" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="28">      
+      <position height="18" width="0" x="0" y="622"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="18" width="0" x="0" y="483"/>    
+    </execution>  
+  </object>  
+  <object id="35" language="java" name="dao.DAOAbstraiteFactory" project="UML" 
+    file="/UML/src/dao/DAOAbstraiteFactory.java" binary="false" label="&lt;static&gt;" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="18">      
+      <position height="90" width="0" x="0" y="199"/>    
+    </execution>  
+  </object>  
+  <object id="40" language="java" name="dao.DAOFactory_XML" project="UML" file="/UML/src/dao/DAOFactory_XML.java" 
+    binary="false" label="instance" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="37">      
+      <position height="18" width="0" x="0" y="217"/>    
+    </execution>    
+    <execution id="39">      
+      <position height="18" width="0" x="0" y="253"/>    
+    </execution>  
+  </object>  
+  <object id="41" language="java" name="dao.DAOAbstraiteFactory" project="UML" 
+    file="/UML/src/dao/DAOAbstraiteFactory.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="20">      
+      <position height="18" width="0" x="0" y="307"/>    
+    </execution>  
+  </object>  
+  <object id="42" language="java" name="dao.I_DAO" project="UML" file="/UML/src/dao/I_DAO.java" binary="false" 
+    label="catalogueDAO" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="22">      
+      <position height="18" width="0" x="0" y="333"/>    
+    </execution>    
+    <execution id="30">      
+      <position height="18" width="0" x="0" y="655"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="FenetreAccueil()" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="getInstance():application.ControleurEnsembleCatalogue" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="getLesNomsCatalogues():java.lang.String[]" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="getLesDetailsCatalogues():java.lang.String[]" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="getNbCatalogues():int" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="15" operation="ControleurEnsembleCatalogue()" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="17" operation="getInstance(java.lang.String):dao.DAOAbstraiteFactory" asynchronous="false">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="createCatalogueImplementantDAO():dao.I_DAO&lt;I_Catalogue&gt;" asynchronous="false" 
+    x="413" y="291">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="findAll(java.lang.Integer):java.util.List&lt;T&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="size():int" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="getNomCatalogue():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="27" operation="getNomCatalogue():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="29" operation="getNbTuples(java.lang.String):int" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="30"/>  
+  </message>  
+  <message id="31" operation="size():int" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="32"/>  
+  </message>  
+  <message id="36" operation="DAOFactory_XML()" asynchronous="false">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="37"/>  
+  </message>  
+  <message id="38" operation="DAOFactory()" asynchronous="false">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="39"/>  
+  </message>
+</sequence-diagram>
